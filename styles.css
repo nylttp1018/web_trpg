@@ -123,3 +123,65 @@ footer {
 .social-links img:hover {
     transform: scale(1.1);
 }
+
+.cta-button:hover, .details-button:hover {
+    background-color: #333; /* 添加鼠标悬停效果 */
+    color: #f77272;
+    transition: 0.3s;
+}
+/* 背景美化 */
+body {
+    background-color: #1a1a1d;
+    color: #eaeaea;
+}
+
+/* 导航栏美化 */
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero 部分样式 */
+.hero {
+    background-image: url('images/cthulhu_background.jpg'); /* 添加克苏鲁风格背景 */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* 按钮样式 */
+.cta-button, .details-button {
+    background-color: #ffcc00;
+    color: #1a1a1d;
+    border-radius: 50px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .details-button:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+/* 游戏项目 hover 效果 */
+.game-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 社交链接美化 */
+.social-links img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
