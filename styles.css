@@ -88,37 +88,75 @@ nav ul li a:hover {
 /* 头像框样式 */
 .avatar-frame {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 180px; /* 调整为稍大 */
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    transition: transform 0.3s ease;
+}
+
+.avatar-frame:hover {
+    transform: scale(1.05); /* 悬停时轻微放大 */
 }
 
 .avatar-frame img {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* 确保图片不会拉伸变形 */
     border-radius: 50%;
 }
 
+/* 头像框颜色样式 */
+.red-frame {
+    border: 5px solid #ff3333;
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5); /* 红色光晕 */
+}
+
+.blue-frame {
+    border: 5px solid #3399ff;
+    box-shadow: 0 0 15px rgba(51, 153, 255, 0.5); /* 蓝色光晕 */
+}
+
+.green-frame {
+    border: 5px solid #33cc33;
+    box-shadow: 0 0 15px rgba(51, 204, 51, 0.5); /* 绿色光晕 */
+}
+
+/* 头像框选择器样式 */
 .frame-selector {
     text-align: center;
     margin: 20px 0;
 }
 
 .frame-selector button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #333;
+    margin: 10px 5px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #333, #555); /* 渐变背景 */
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 按钮阴影 */
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .frame-selector button:hover {
-    background-color: #555;
+    background: linear-gradient(135deg, #444, #666); /* 悬停时更亮 */
+    transform: scale(1.1); /* 悬停时放大效果 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .avatar-frame {
+        width: 150px;
+        height: 150px;
+    }
+
+    .frame-selector button {
+        padding: 10px 20px;
+    }
 }
 
 /* 底部样式 */
