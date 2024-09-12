@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -6,33 +6,77 @@
     <title>霍咕咕的传奇调查员日记簿</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>霍咕咕的传奇调查员日记簿</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#">调查员日记</a></li>
-                <li><a href="#">冒险故事</a></li>
-                <li><a href="#">联系我们</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="diary-page">
 
-    <main>
-        <section class="diary">
-            <h2>调查员日记</h2>
-            <article>
-                <h3>日记条目 #1</h3>
-                <p>今天我们进入了阿卡姆的小巷，发现了一些神秘的符号，这些符号似乎与古老的邪教仪式有关。</p>
-            </article>
-            <article>
-                <h3>日记条目 #2</h3>
-                <p>我们小队中的一员今天开始出现不寻常的幻觉，仿佛听到了来自异界的低语...</p>
-            </article>
-        </section>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>霍咕咕的传奇调查员日记簿</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">调查员日记</a></li>
+                    <li><a href="module_page.html">待定模组</a></li>
+                    <li><a href="#">冒险故事</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="avatar-frame" id="avatarFrame">
+            <img src="image/1.jpg" alt="霍咕咕" class="avatar">
+        </div>
+
+        <div class="frame-selector">
+            <button onclick="changeFrame('red-frame')">红色框</button>
+            <button onclick="changeFrame('blue-frame')">蓝色框</button>
+            <button onclick="changeFrame('green-frame')">绿色框</button>
+        </div>
+    
+    
+
+   
+    <section class="diary">
+        <h2>调查员日记</h2>
+        
+        <article>
+            <h3>日记条目 #1</h3>
+            <p>今天我们进入了阿卡姆的小巷，发现了一些神秘的符号，这些符号似乎与古老的邪教仪式有关。</p>
+        </article>
+
+        <article>
+            <h3>日记条目 #2</h3>
+            <p>我们小队中的一员今天开始出现不寻常的幻觉，仿佛听到了来自异界的低语...</p>
+        </article>
+
+        <!-- 新增的精彩片段 -->
+        <article>
+            <h3>日记条目 #3</h3>
+            <p><strong>日期：</strong>2022年6月7日<br>
+               <strong>地点：</strong>华夏东流市</p>
+            <p>我们今天继续深入调查东流市的神秘案件。在高考的考场外，我们遇到了一个奇怪的男子，他身上纹着一只巨大的花臂，似乎一直在等待什么人。他显得非常焦虑，时不时抬头看看考场的方向。</p>
+            <p>我们小心地跟踪着他，直到他与霍开歌先生接触。让我意外的是，霍开歌似乎早已了解对方的目的，两人之间的对话充满了暗示性的内容，像是在探讨某种不可告人的“新技术”。花臂男人自称用这种技术考上了清华，但他的言语中隐藏着更多我们尚未理解的秘密……</p>
+        </article>
+
+        <article>
+            <h3>日记条目 #4</h3>
+            <p><strong>日期：</strong>2022年6月8日<br>
+               <strong>地点：</strong>东流市，阳光公寓</p>
+            <p>李倩的突袭行动在今天揭示了更为深刻的阴谋。我们追踪的李华一家似乎与某种诡异的科研项目有联系。进入阳光公寓后，我们发现门口站着保安，不是任何普通的守卫，而是精锐的战术小队成员。李倩提到，进入这座公寓就像“羊入虎口”。</p>
+            <p>更令人震惊的是，公寓内的某处隐藏着一个巨大的秘密实验室。这些实验室中，科技远超我们的想象。就在我们以为一切已经查明时，通向地下的通道敞开了，而我们面对的将是更大的未知。</p>
+        </article>
+
+        <article>
+            <h3>日记条目 #5</h3>
+            <p><strong>日期：</strong>2022年6月9日<br>
+               <strong>地点：</strong>北门楼</p>
+            <p>今晚的行动比我们预想的更加复杂。霍开歌独自潜行到北门楼，与花臂男子再度碰面。男子透露了他们正在研究的一项改变人类资质的技术，他说：“第一次总是不适应的，之后几次会越来越好。”</p>
+            <p>霍开歌虽然表现得冷静，但我们都感到这种技术背后隐藏着危险。男子试图让霍参与实验，但霍机智地拒绝了。最终，我们决定回到北门楼，等待曹师傅的进一步指示。然而，我的预感告诉我，这场阴谋远未结束……</p>
+        </article>
+    </section>
+
+        
 
         <section class="stories">
             <h2>冒险故事</h2>
@@ -47,10 +91,21 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 霍咕咕的传奇调查员日记簿. 版权所有。</p>
     </footer>
+
+        <!-- JavaScript 用于动态切换头像框 -->
+<script>
+    function changeFrame(frameClass) {
+        const avatarFrame = document.getElementById('avatarFrame');
+        avatarFrame.className = 'avatar-frame'; // 重置为默认框
+        avatarFrame.classList.add(frameClass);  // 添加新框样式
+    }
+    </script>
 </body>
+
+    
 </html>
