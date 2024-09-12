@@ -225,3 +225,227 @@ footer {
     transform: scale(1.05); /* 悬停时放大效果 */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* 加强悬停时的阴影效果 */
 }
+/* 克苏鲁神话背景部分 */
+.lore {
+    background-color: #1e1e1e; /* 深色背景 */
+    padding: 40px 20px;
+    text-align: center;
+    color: #eaeaea;
+    margin-bottom: 40px;
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+.lore h3 {
+    font-size: 36px;
+    color: #ffcc00; /* 标题亮黄色 */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lore p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px; /* 限制文本区域宽度 */
+    margin: 0 auto; /* 居中文本 */
+}
+
+.lore img {
+    width: 100%;
+    max-width: 400px; /* 限制图片最大宽度 */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* 图片阴影 */
+}
+
+/* 推荐外神部分 */
+.recommendations {
+    background-color: #2c2c2e;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+.recommendations h3 {
+    font-size: 36px;
+    color: #ffcc00; /* 标题亮黄色 */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.recommend-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.recommend-item {
+    background-color: #1a1a1d; /* 卡片背景色 */
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommend-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recommend-item h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* 标题亮黄色 */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recommend-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eaeaea;
+}
+
+/* 悬停效果 */
+.recommend-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero 部分样式 */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/cthulhu_background.jpg'); /* 渐变和背景图片结合 */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+/* 标题样式 */
+.hero h2 {
+    font-size: 48px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out; /* 淡入动画 */
+}
+
+/* 描述文本样式 */
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* CTA按钮样式 */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ffcc00;
+    color: #1a1a1d;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* CTA按钮悬停效果 */
+.cta-button:hover {
+    background-color: #e6b800;
+    color: #fff;
+    transform: scale(1.1); /* 悬停放大效果 */
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header 样式 */
+header {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2e); /* 背景渐变效果 */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo 样式 */
+.logo h1 {
+    font-size: 32px;
+    color: #ffcc00; /* 亮黄色字体 */
+    font-family: 'Georgia', serif; /* 高级感字体 */
+    text-transform: uppercase; /* 字母大写 */
+    letter-spacing: 2px; /* 字母间距 */
+    margin: 0;
+}
+
+/* 导航栏样式 */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* 增加菜单项之间的间距 */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* 导航链接样式 */
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00; /* 悬停时背景变为黄色 */
+    color: #1e1e1e; /* 悬停时文字颜色变深 */
+    transform: scale(1.1); /* 悬停时轻微放大 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
