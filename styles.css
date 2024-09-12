@@ -146,3 +146,82 @@ footer {
 .social-links img:hover {
     transform: scale(1.2);
 }
+
+/* 美化游戏部分 */
+.games {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1e1e1e; /* 深色背景 */
+    color: #eaeaea; /* 浅色字体 */
+}
+
+.games h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* 亮黄色标题 */
+    text-transform: uppercase; /* 全大写标题 */
+    letter-spacing: 2px; /* 增加字母间距 */
+    border-bottom: 2px solid #ffcc00; /* 标题下划线 */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.game-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game-item {
+    background-color: #2c2c2e; /* 卡片背景颜色 */
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* 限制卡片宽度 */
+    border-radius: 15px; /* 圆角 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* 卡片阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 10px; /* 图片圆角 */
+    margin-bottom: 15px;
+}
+
+.game-item h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* 游戏标题颜色 */
+}
+
+.game-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #eaeaea; /* 描述文本颜色 */
+}
+
+.game-item .details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.game-item .details-button:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+/* 卡片的悬停效果 */
+.game-item:hover {
+    transform: scale(1.05); /* 悬停时放大效果 */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* 加强悬停时的阴影效果 */
+}
