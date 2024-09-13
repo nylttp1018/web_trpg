@@ -487,3 +487,103 @@ nav ul li a:hover {
         text-align: center;
     }
 }
+/* 学习板块样式 */
+.learning {
+    background-color: #1e1e1e; /* 深色背景 */
+    padding: 40px 20px;
+    text-align: center;
+    color: #eaeaea;
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+    margin-bottom: 40px;
+}
+
+.learning h3 {
+    font-size: 36px;
+    color: #ffcc00; /* 标题亮黄色 */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* 增加字母间距 */
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.learning p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 学习资源部分样式 */
+.learning-resources {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.resource-item {
+    background-color: #2c2c2e;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px; /* 卡片圆角 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* 添加阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.resource-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.resource-item h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.resource-item p {
+    font-size: 16px;
+    color: #eaeaea;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 悬停时图片和卡片动画 */
+.resource-item:hover {
+    transform: scale(1.05); /* 悬停时卡片放大效果 */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* 悬停时加深阴影 */
+}
+
+.resource-item:hover img {
+    transform: scale(1.1); /* 图片悬停时放大效果 */
+}
+
+/* 按钮样式 */
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #e6b800;
+    color: #fff;
+    transform: scale(1.1); /* 悬停时按钮放大效果 */
+}
