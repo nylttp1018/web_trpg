@@ -6,9 +6,9 @@
     <title>待定模组</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="module-page">
 
-<body>
+
+<body class="module-page">
     <header>
         <h1>待定模组</h1>
         <nav>
@@ -23,6 +23,13 @@
     </header>
 
     <main>
+        <form id="searchForm">
+            <input type="text" id="query" placeholder="搜索模组..." required>
+            <button type="submit">搜索</button>
+        </form>
+        
+        <div id="results"></div>
+        
         <section class="module-info">
             <h2>模组概览</h2>
             <p>此页面将显示关于待定模组的详细信息，包括设置和数据展示。</p>
@@ -46,4 +53,31 @@
         <p>&copy; 2024 待定模组页面. 版权所有。</p>
     </footer>
 </body>
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('query').value.toLowerCase();
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = ''; // 清空之前的结果
+        
+        const modules = [
+            {name: '克苏鲁的呼唤', description: '一个关于召唤古老邪神的模组。'},
+            {name: '阿卡姆恐怖', description: '在阿卡姆小镇解谜和阻止邪恶势力的模组。'},
+            {name: '疯狂山脉', description: '探索南极古老力量的模组。'}
+        ];
+        
+        const results = modules.filter(module => module.name.includes(query));
+        
+        if (results.length > 0) {
+            results.forEach(result => {
+                const moduleDiv = document.createElement('div');
+                moduleDiv.innerHTML = `<h3>${result.name}</h3><p>${result.description}</p>`;
+                resultsDiv.appendChild(moduleDiv);
+            });
+        } else {
+            resultsDiv.innerHTML = '<p>未找到相关模组。</p>';
+        }
+    });
+</script>
+
 </html>
