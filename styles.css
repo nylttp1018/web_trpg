@@ -633,3 +633,198 @@ nav ul li a:hover {
     color: #ffcc00;
     margin-bottom: 10px;
 }
+
+/* 比赛经历表单样式 */
+form {
+    margin-bottom: 20px;
+    background-color: #2c2c2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    font-size: 18px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #eaeaea;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #1a1a1d;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* 比赛文章样式 */
+  #articles {
+    margin-top: 40px;
+  }
+  
+  #articles h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  #articles p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #eaeaea;
+  }
+  
+  #articles hr {
+    border: 0;
+    height: 1px;
+    background: #ffcc00;
+    margin: 20px 0;
+  }
+  
+  /* 自定义的板块样式 */
+  .article-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .article-section h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .article-section p {
+    color: #eaeaea;
+    margin-bottom: 10px;
+  }
+  
+  .article-section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* 调整比赛表单及文章在移动设备的响应式设计 */
+  @media (max-width: 768px) {
+    form {
+      padding: 10px;
+    }
+  
+    form label, form input, form textarea {
+      font-size: 16px;
+    }
+  
+    form button {
+      padding: 8px 15px;
+    }
+  
+    #articles h3 {
+      font-size: 20px;
+    }
+  
+    #articles p {
+      font-size: 16px;
+    }
+  }
+
+/* 回到顶部和回到底部按钮样式 */
+#back-to-top,
+#back-to-bottom {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* 深色渐变背景 */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-to-bottom {
+    bottom: 20px; /* 调整“回到底部”按钮的位置 */
+}
+
+#back-to-top.show,
+#back-to-bottom.show {
+    display: flex; /* 显示时设置为flex布局，以便居中图标 */
+}
+
+/* 按钮的悬停效果 */
+#back-to-top:hover,
+#back-to-bottom:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1); /* 放大效果 */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* 图标样式 */
+#back-to-top i,
+#back-to-bottom i {
+    font-size: 24px;
+}
+
+/* 添加动画 */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+}
+#back-to-top.show,
+#back-to-bottom.show {
+    /* 之前的样式 */
+    animation: fadeInUp 0.5s, pulse 2s infinite;
+}
+
+
+
+#scroll-percentage {
+    position: fixed;
+    top: 50%; /* 垂直居中 */
+    right: 20px; /* 距离页面右侧20px */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* 添加神秘的光影效果 */
+    transition: all 0.3s ease;
+    display: none; /* 初始状态隐藏 */
+}
+
+#scroll-percentage.show {
+    display: block;
+}
