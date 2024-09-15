@@ -25,16 +25,6 @@
             </nav>
         </header>
 
-        <div class="avatar-frame" id="avatarFrame">
-            <img src="image/1.jpg" alt="霍咕咕" class="avatar">
-        </div>
-        
-        <div class="frame-selector">
-            <button onclick="changeFrame('red-frame')">红色框</button>
-            <button onclick="changeFrame('blue-frame')">蓝色框</button>
-            <button onclick="changeFrame('green-frame')">绿色框</button>
-        </div>
-    
     
 
    
@@ -259,14 +249,7 @@
 
 
 </body>
-<!-- JavaScript 用于动态切换头像框 -->
-<script>
-    function changeFrame(frameClass) {
-        const avatarFrame = document.getElementById('avatarFrame');
-        avatarFrame.className = 'avatar-frame'; // 重置为默认框
-        avatarFrame.classList.add(frameClass);  // 添加新框样式
-    }
-</script>
+
 
 <script>
     // 获取按钮

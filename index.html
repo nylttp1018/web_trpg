@@ -32,7 +32,8 @@
     </nav>
     
 </header>
-
+  <!-- 主内容和侧边栏容器 -->
+  <div class="content-container">
     <main>
       
         <section class="hero">
@@ -124,6 +125,55 @@
         
     </main>
 
+ <!-- 侧边栏 -->
+ <aside class="sidebar">
+
+    <div class="avatar-frame" id="avatarFrame">
+        <img src="image/1.jpg" alt="霍咕咕" class="avatar">
+    </div>
+    
+    <div class="frame-selector">
+        <button onclick="changeFrame('red-frame')">红色框</button>
+        <button onclick="changeFrame('blue-frame')">蓝色框</button>
+        <button onclick="changeFrame('green-frame')">绿色框</button>
+    </div>
+
+    <div class="sidebar-section">
+        <h3>关于我</h3>
+        <p>我是霍咕咕，一个克苏鲁神话爱好者。这里是我记录跑团故事和学习经历的个人空间。</p>
+    </div>
+
+    <div class="sidebar-section">
+        <h3>最新文章</h3>
+        <ul>
+            <li><a href="#">克苏鲁神话中的外神</a></li>
+            <li><a href="#">如何构建恐怖的跑团世界</a></li>
+            <li><a href="#">跑团中的调查员日记分享</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-section">
+        <h3>标签</h3>
+        <div class="tags">
+            <a href="#" class="tag">克苏鲁神话</a>
+            <a href="#" class="tag">跑团故事</a>
+            <a href="#" class="tag">桌游</a>
+            <a href="#" class="tag">洛夫克拉夫特</a>
+            <a href="#" class="tag">恐怖</a>
+        </div>
+    </div>
+
+    <div class="sidebar-section">
+        <h3>关注我</h3>
+        <div class="social-links">
+            <a href="#"><img src="image/facebook.png" alt="Facebook" width="40"></a>
+            <a href="#"><img src="image/twitter.png" alt="Twitter" width="40"></a>
+            <a href="#"><img src="image/instagram.png" alt="Instagram" width="40"></a>
+        </div>
+    </div>
+</aside>
+</div>
+
     <footer>
         <div class="social-links">
             <a href="https://www.facebook.com" target="_blank">
@@ -169,6 +219,16 @@
 
     
 </body>
+
+<!-- JavaScript 用于动态切换头像框 -->
+<script>
+    function changeFrame(frameClass) {
+        const avatarFrame = document.getElementById('avatarFrame');
+        avatarFrame.className = 'avatar-frame'; // 重置为默认框
+        avatarFrame.classList.add(frameClass);  // 添加新框样式
+    }
+</script>
+
 <script>
     // 获取按钮
     var backToTopButton = document.getElementById("back-to-top");
